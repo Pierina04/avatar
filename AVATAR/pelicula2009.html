@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Avatar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <style>
+    .nav-link {
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .nav-link:hover {
+      transform: scale(1.05);
+    }
+
+    .film {
+      margin-top: 100px; }
+
+      .image-container {
+      text-align: center;
+      margin-bottom: 20px;
+      filter: brightness(50%)
+    }
+
+    .image {
+      width: 100%; /* Asegura que las imágenes ocupen todo el ancho de su contenedor */
+      max-width: 100%;
+      height: auto;
+    } 
+
+    .card {
+      position: relative;
+      overflow: hidden;
+     
+    background-color: #153359;
+    color: #fff;
+}
+    
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .card:hover .overlay {
+      opacity: 1;
+    }
+
+    .overlay img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    
+
+    @keyframes scaleAnimation {
+  0% {
+    transform: scale(1); /* Tamaño inicial */
+  }
+  50% {
+    transform: scale(1.05); /* Aumenta al 105% a la mitad de la animación */
+  }
+  100% {
+    transform: scale(1); /* Vuelve al tamaño original al final de la animación */
+  }
+}
+
+.animate-me {
+    animation: scaleAnimation 3s infinite alternate forwards;
+}
+      
+
+  
+  </style>
+</head>
+<body style="background-color: black; ;">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom fixed-top" style="height: 10%;">
+    <div class="container-fluid">
+      <a class="navbar-brand col-9" href="#">
+        <img src="Images/AVATAR LOGO.png" alt="" width="20%" height="20%">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <!-- Tu menú de navegación -->
+          <li class="nav-item">
+            <a class="nav-link active text-primary-emphasis fs-5" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary-emphasis fs-5" href="shop.html">Shop</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-primary-emphasis fs-5" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Peliculas
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item text-primary-emphasis fs-6" href="pelicula2022.html">Avatar: The way of water(2022)</a></li>
+              <li><a class="dropdown-item text-primary-emphasis fs-6" href="pelicula2009.html">Avatar(2009)</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary-emphasis fs-5" href="pandorapedia.html">Pandorapedia</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center animate-me">
+        <img src="Images/home4.jpeg" alt="Descripción de la imagen" class="img-fluid animate-me">
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="container film">
+    <div class="row">
+      <div class="col-md-3">
+        <img src="Images/2009portada.jpeg" alt="Imagen Izquierda" class="img-fluid">
+      </div>
+      <div class="col-md-6 text-center">
+        <h1 class="text-primary">AVATAR</h1>
+        <p class="text-white">"Del director ganador del Premio de la Academia® James Cameron llega “Avatar”, ambientada en el año 2154, en la que el ex marine Jake Sully es reclutado para una misión en Pandora, una luna distante donde un consorcio corporativo está extrayendo un mineral raro que es clave para resolver La crisis energética de la Tierra. Para existir en Pandora, Jake debe renacer como un avatar, un cuerpo biológico controlado remotamente que puede sobrevivir en el aire letal. Después de que Neytiri, una mujer miembro de los Na'vi, el clan indígena en el que fue enviado a infiltrarse, salva la vida de Jake, este se siente atraído por las costumbres de los Na'vi. Pronto, Jake se ve envuelto en un choque de civilizaciones y se enfrenta a la prueba definitiva en una batalla monumental que decidirá el destino de un mundo entero.</p>
+      </div>
+      <div class="col-md-3">
+        <img src="Images/home2.jpeg" alt="Imagen Derecha" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+  <div class="container personajes">
+    <div class="row justify-content-center " style="margin-top: 50px; margin-bottom: 50px; ">
+      <div class="col-md-2">
+        <div class="card text-center">
+          <img src="Images/ETUWA.png" alt="Imagen 1" class="card-img-top img-fluid" style="border-radius: 0;">
+          <div class="card-body">
+            <h5 class="card-title">ETUWA</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card text-center">
+          <img src="Images/EYTUCAN.png" alt="Imagen 2" class="card-img-top img-fluid" style="border-radius: 0;">
+          <div class="card-body">
+            <h5 class="card-title">EYTUCAN</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card text-center">
+          <img src="Images/KA´NAT.png" alt="Imagen 3" class="card-img-top img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">KA´NAT</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card text-center">
+          <img src="Images/MINANG.png" alt="Imagen 4" class="card-img-top img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">MINANG</h5>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="container personajes">
+    <div class="row justify-content-center " style="margin-top: 50px; margin-bottom: 50px;">
+      <div class="col-md-2">
+        <div class="card text-center">
+          <img src="Images/NEFIKA.png" alt="Imagen 1" class="card-img-top img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">NEFIKA</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card text-center">
+          <img src="Images/NESIM.png" alt="Imagen 2" class="card-img-top img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">NESIM</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card text-center">
+          <img src="Images/SO´LEK.png" alt="Imagen 3" class="card-img-top img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">SO´LEK</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="card text-center">
+          <img src="Images/JAKE.png" alt="Imagen 4" class="card-img-top img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">JAKE SULLY</h5>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+  <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Images/20091.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="Images/20092.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="Images/20093.jpeg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+  <!-- Footer -->
+  <footer class="text-center py-3" style="background-color: aliceblue;">
+    <div class="container">
+      <img src="images/disney-plus-logo.png" alt="Logo" width="15%" height="20%">
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Avatar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <style>
+    .nav-link {
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .nav-link:hover {
+      transform: scale(1.05);
+    }
+
+    .film {
+      margin-top: 100px; }
+
+      .image-container {
+      text-align: center;
+      margin-bottom: 20px;
+      filter: brightness(50%)
+    }
+
+    .image {
+      width: 100%; /* Asegura que las imágenes ocupen todo el ancho de su contenedor */
+      max-width: 100%;
+      height: auto;
+    } 
+
+    .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+    background-color: #3498db;
+  }
+
+  .card img {
+    transition: transform 0.3s;
+  }
+
+  
+
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .card:hover::before {
+    opacity: 1;
+  }
+
+ 
+
+    @keyframes scaleAnimation {
+  0% {
+    transform: scale(1); /* Tamaño inicial */
+  }
+  50% {
+    transform: scale(1.05); /* Aumenta al 105% a la mitad de la animación */
+  }
+  100% {
+    transform: scale(1); /* Vuelve al tamaño original al final de la animación */
+  }
+}
+
+.animate-me {
+    animation: scaleAnimation 3s infinite alternate forwards;
+}
+      
+
+  
+  </style>
+</head>
+<body style="background-color: aliceblue; ;">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom fixed-top" style="height: 10%;">
+    <div class="container-fluid">
+      <a class="navbar-brand col-9" href="#">
+        <img src="Images/AVATAR LOGO.png" alt="" width="20%" height="20%">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <!-- Tu menú de navegación -->
+          <li class="nav-item">
+            <a class="nav-link active text-primary-emphasis fs-5" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary-emphasis fs-5" href="shop.html">Shop</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-primary-emphasis fs-5" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Peliculas
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item text-primary-emphasis fs-6" href="pelicula2022.html">Avatar: The way of water(2022)</a></li>
+              <li><a class="dropdown-item text-primary-emphasis fs-6" href="pelicula2009.html">Avatar(2009)</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary-emphasis fs-5" href="pandorapedia.html">Pandorapedia</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center animate-me">
+        <img src="Images/wayofwhater.png" alt="Descripción de la imagen" class="img-fluid animate-me">
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="container film">
+    <div class="row">
+      <div class="col-md-3">
+        <img src="Images/film22022.jpeg" alt="Imagen Izquierda" class="img-fluid">
+      </div>
+      <div class="col-md-6 text-center">
+        <h1>AVATAR: THE WAY OF WATER</h1>
+        <p>"Avatar: The Way of Water" alcanza nuevas alturas y explora profundidades desconocidas cuando James Cameron regresa al mundo de Pandora en esta aventura de acción llena de emociones. Ambientada más de una década después de los acontecimientos de la primera película, "Avatar: The Way of Water" lanza la historia de la familia Sully (Jake, Neytiri y sus hijos), los problemas que los persiguen, hasta dónde llegan para salvarse. unos a otros a salvo, las batallas que libran para mantenerse con vida y las tragedias que soportan. Todo esto con el impresionante telón de fondo de Pandora, donde se presenta al público nuevas culturas Na'vi y una variedad de criaturas marinas exóticas que pueblan los majestuosos océanos. Nominada a numerosos premios de la Academia®, incluida la de Mejor Película, la película dirigida por James Cameron se convirtió en la tercera película con mayor recaudación de taquilla de todos los tiempos y estableció un nuevo punto de referencia para los efectos visuales. Producida por Cameron y su socio Jon Landau, la producción de Lightstorm Entertainment está protagonizada por Sam Worthington, Zoe Saldaña, Sigourney Weaver, Stephen Lang, Cliff Curtis y Kate Winslet. Al ilustre elenco adulto se unen los talentosos recién llegados Britain Dalton, Jamie Flatters, Trinity Jo-Li Bliss, Bailey Bass y Jack Champion.</p>
+      </div>
+      <div class="col-md-3">
+        <img src="Images/filmmm.jpg" alt="Imagen Derecha" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+  <div class="container personajes">
+    <div class="row justify-content-center" style="margin-top: 50px; margin-bottom: 50px;">
+        <div class="col-md-2">
+            <div class="card text-center">
+                <img src="Images/Diseño sin título (10).png" alt="Imagen 1" class="card-img-top img-fluid" style="border-radius: 0;">
+                <div class="card-body">
+                    <h5 class="card-title text-light">TUK</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card text-center">
+                <img src="Images/Diseño sin título (11).png" alt="Imagen 2" class="card-img-top img-fluid" style="border-radius: 0;">
+                <div class="card-body">
+                    <h5 class="card-title text-light">TONOWARI</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card text-center">
+                <img src="Images/Diseño sin título (12).png" alt="Imagen 3" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title text-light">TSIREYA</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card text-center">
+                <img src="Images/Diseño sin título (4).png" alt="Imagen 4" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title text-light">NEYTIRI</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container personajes">
+    <div class="row justify-content-center" style="margin-top: 50px; margin-bottom: 50px;">
+        <div class="col-md-2">
+            <div class="card text-center">
+                <img src="Images/Diseño sin título (8).png" alt="Imagen 1" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title text-light">NETEYAM</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card text-center">
+                <img src="Images/JAKE.png" alt="Imagen 2" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title text-light">JAKE SULLY</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card text-center">
+                <img src="Images/Diseño sin título (7).png" alt="Imagen 3" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title text-light">SPIDER</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card text-center">
+                <img src="Images/Diseño sin título (8).png" alt="Imagen 4" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title text-light">NETEYAM</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Images/galeria3.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="Images/galeria2.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="Images/galeria.jpeg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+  <!-- Footer -->
+  <footer class="text-center py-3" style="background-color: aliceblue;">
+    <div class="container">
+      <img src="images/disney-plus-logo.png" alt="Logo" width="15%" height="20%">
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Avatar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <style>
+    .nav-link {
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .nav-link:hover {
+            transform: scale(1.05);
+        }
+
+        .bound {
+      overflow: hidden;
+      
+    }
+
+    .iframe-wrapper {
+      position: relative;
+      width: 100%;
+      height: 0;
+    }
+
+    .iframe-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .card {
+      max-width: 100%;
+    }
+
+    .img-animada {
+      max-width: 100%;
+      height: auto;
+      animation: rotateHorizontal 6s linear infinite; /* Ajusta la duración y el tipo de animación según tus preferencias */
+    }
+
+    @keyframes rotateHorizontal {
+      0% {
+        transform: rotateY(0deg);
+      }
+      100% {
+        transform: rotateY(360deg);
+      }
+    }
+
+    .custom-card {
+      border: 2px solid #153359;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .custom-card img {
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      max-height: 300px;
+      object-fit: cover;
+      transition: transform 0.3s ease-in-out; 
+    }
+
+    .custom-card:hover img {
+  transform: scale(1.1); /* Ajusta el valor según tus preferencias para el agrandamiento */
+}
+
+    .custom-card .card-body {
+      padding: 20px;
+    }
+
+    .custom-card .card-title {
+      color: #3498db;
+      font-size: 24px;
+    }
+
+    .custom-card .card-text {
+      color: #555;
+      font-size: 16px;
+    }
+
+      
+    .container {
+  text-align: center;
+}
+
+.content {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+#generar-frase {
+  cursor: pointer;
+  border: none;
+  width: 200px; /* Ajusta el tamaño según tus necesidades */
+}
+
+
+    
+   
+  </style>
+  
+  </head>
+  <body style="background-color: #f9f9f9; ;">
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom fixed-top" style="height: 10%; ">
+        <div class="container-fluid">
+          <a class="navbar-brand col-9" href="#">
+            <img src="Images/AVATAR LOGO.png" alt="" width="20%" height="20%">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-primary-emphasis fs-5" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary-emphasis fs-5" href="shop.html">Shop</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-primary-emphasis fs-5" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Peliculas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item text-primary-emphasis fs-6" href="pelicula2022.html">Avatar: The way of water(2022)</a></li>
+                  <li><a class="dropdown-item text-primary-emphasis fs-6" href="pelicula2009.html">Avatar(2009)</a></li>
+                  
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary-emphasis fs-5" href="pandorapedia.html">Pandorapedia</a>
+              </li>
+             
+
+          
+            </ul>
+          </div>
+        </div>
+      </div>
+      </nav>
+      
+    
+<!-- Titulo -->
+<div class="card text-bg-dark border-0">
+    <img src="Images/pandorapedia.png" class="card-img" alt="...">
+    <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <img src="Images/Captura de pantalla 2023-11-09 a la(s) 15.16.28.png" class="rounded img-fluid img-animada" alt="pájaro">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card custom-card">
+          <img src="Images/calaancestros.jpeg" class="img-fluid rounded-start" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">CALA DE LOS ANCESTROS</h5>
+            <p class="card-text">La Cala de los Ancestros es el sitio sagrado de Metkayina. La concentración de flujo es más evidente en su estructura circular arqueada.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-6">
+        <div class="card custom-card">
+          <img src="Images/arbolvida.jpeg" class="img-fluid rounded-start" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">ARBOL DE LAS ALMAS</h5>
+            <p class="card-text">El Árbol de las Almas es un lugar sagrado para los Na'vi y su conexión más cercana con Eywa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card custom-card">
+          <img src="Images/ARBOLESPIRITUAL.jpeg" class="img-fluid rounded-start" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">ARBOL ESPIRITUAL METKAYINA</h5>
+            <p class="card-text">El Árbol de los Espíritus es un sitio sagrado para la Gente del Arrecife del clan Metkayina situado en las profundidades de las aguas de la Cala de los Ancestros.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-6">
+        <div class="card custom-card">
+          <img src="Images/ARBOLDELASVOCES.jpeg" class="img-fluid rounded-start" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">ARBOL DE LAS VOCES</h5>
+            <p class="card-text">En su núcleo neuronal, el “Árbol de las Voces” contiene todos los recuerdos almacenados del clan Omatikaya.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  
+  <div class="container">
+    <div class="content">
+      <h2>Frases destacadas de nuestras Peliculas</h2>
+      <p id="frase-display"></p>
+      <img src="Images/pajaroazul.png" alt="Generar" id="generar-frase" onclick="generarFrase()" class="boton-generar">
+    </div>
+  </div>
+  <script src="Java.js"></script>
+  
+  <!--  musica-->
+  <section class="bound">
+    <div class="container">
+      <div class="iframe-wrapper" style="padding-bottom:43.75%">
+        <iframe src="https://open.spotify.com/embed/album/1H81jGoWeLI8ufq42GfDPn" frameborder="0" allowfullscreen="" title=""></iframe>
+      </div>
+    </div>
+  </section>
+  
+<!-- Footer -->
+<footer class="text-center py-3" style="background-color:aliceblue;">
+  <div class="container ">
+      <img src="images/disney-plus-logo.png" alt="Logo" width="15%" height="20%">
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+  </body>
+</html>

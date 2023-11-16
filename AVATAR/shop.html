@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Avatar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <style>
+    .nav-link {
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .nav-link:hover {
+            transform: scale(1.05);
+        }
+
+        /* Color fondo personajes */
+.card-custom-bg {
+    background-color: #153359;
+    color: #fff;
+}
+
+.animated-text {
+    font-size: 16px; /* Tamaño de fuente inicial */
+    animation: text-pulse 1.5s infinite alternate; /* Definir la animación */
+}
+
+@keyframes text-pulse {
+    0% {
+        font-size: 16px;
+    }
+    100% {
+        font-size: 20px; /* Tamaño de fuente máximo */
+    }
+}
+
+
+
+  </style>
+  
+  </head>
+  <body style="background-color: #76d9fb; ;">
+    
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom fixed-top" style="height: 10%; ">
+        <div class="container-fluid">
+          <a class="navbar-brand col-9" href="#">
+            <img src="Images/AVATAR LOGO.png" alt="" width="20%" height="20%">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-primary-emphasis fs-5" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary-emphasis fs-5" href="shop.html">Shop</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-primary-emphasis fs-5" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Peliculas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item text-primary-emphasis fs-6" href="pelicula2022.html">Avatar: The way of water(2022)</a></li>
+                  <li><a class="dropdown-item text-primary-emphasis fs-6" href="pelicula2009.html">Avatar(2009)</a></li>
+                  
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary-emphasis fs-5" href="pandorapedia.html">Pandorapedia</a>
+              </li>
+             
+
+          
+            </ul>
+          </div>
+        </div>
+      </div>
+      </nav>
+      
+      
+    <!-- Titulo -->
+    <div class="card text-bg-dark border-0">
+        <img src="Images/LEGO.webp" class="card-img" alt="...">
+        <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+            <h1 class="card-title">Avatar: LEGO</h1>
+            <p class="card-text h5 animated-text">¡Crea tus propias aventuras en el mundo de Avatar con los sets LEGO!</p>
+        </div>
+    </div>
+    
+      <!-- Personajes lego -->
+      <div class="container">
+        <div class="row justify-content-center mb-4">
+          <div class="col-md-3 border-0">
+            <div class="card card-custom-bg"> 
+              <img src="Images/jakesullyLEGO.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">JAKE SULLY</h5>
+                <p class="card-text">Ex soldado y héroe Na'vi.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card card-custom-bg border-0">
+              <img src="Images/NeytiriLEGO.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">NEYTIRI</h5>
+                <p class="card-text">Guerrera y sanadora experta.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card card-custom-bg border-0">
+              <img src="Images/RonalLEGO.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">RONAL</h5>
+                <p class="card-text">Clan Tsahik y guerrero feroz.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card card-custom-bg border-0">
+              <img src="Images/TonowaryLEGO.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">TONOWARI</h5>
+                <p class="card-text">Líder del clan Metkayina.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Juegos -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <img src="Images/Recurso 1.png" class="card-img-top" alt="Producto 1">
+              <div class="card-body">
+                <h5 class="card-title">Swimwing Adventure</h5>
+                <p class="card-text">Crea tu mundo con los sets LEGO</p>
+                <a href="#" class="btn btn-primary btn-block">Comprar</a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <img src="Images/Recurso 2.png" class="card-img-top" alt="Producto 2">
+              <div class="card-body">
+                <h5 class="card-title">Toruk Makto & tree of Souls</h5>
+                <p class="card-text">Crea tu mundo con los sets LEGO</p>
+                <a href="#" class="btn btn-primary btn-block">Comprar</a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <img src="Images/Recurso 4.png" class="card-img-top" alt="Producto 3">
+              <div class="card-body">
+                <h5 class="card-title">Jake & Neytiti First Banshee Flight</h5>
+                <p class="card-text">Crea tu mundo con los sets LEGO</p>
+                <a href="#" class="btn btn-primary btn-block">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <img src="Images/Recurso 1.png" class="card-img-top" alt="Producto 1">
+              <div class="card-body">
+                <h5 class="card-title">Swimwing Adventure</h5>
+                <p class="card-text">Crea tu mundo con los sets LEGO</p>
+                <a href="#" class="btn btn-primary btn-block">Comprar</a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <img src="Images/Recurso 2.png" class="card-img-top" alt="Producto 2">
+              <div class="card-body">
+                <h5 class="card-title">Toruk Makto & tree of Souls</h5>
+                <p class="card-text">Crea tu mundo con los sets LEGO</p>
+                <a href="#" class="btn btn-primary btn-block">Comprar</a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <img src="Images//Recurso 4.png" class="card-img-top" alt="Producto 3">
+              <div class="card-body">
+                <h5 class="card-title">Jake & Neytiti First Banshee Flight</h5>
+                <p class="card-text">Crea tu mundo con los sets LEGO</p>
+                <a href="#" class="btn btn-primary btn-block">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      
+      
+          
+    
+    
+<!-- Footer -->
+<footer class="text-center py-3" style="background-color:aliceblue;">
+  <div class="container ">
+      <img src="images/disney-plus-logo.png" alt="Logo" width="15%" height="20%">
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
